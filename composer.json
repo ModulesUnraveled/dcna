@@ -26,10 +26,11 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
         "drupal/console": "~0.10",
-        "drupal/pathauto": "dev-8.x-1.x",
+        "drupal/pathauto": "8.1.*@dev",
         "drupal/admin_toolbar": "8.1.*",
         "drupal/redirect": "dev-8.x-1.x",
-        "drupal/google_analytics": "8.2.*@dev"
+        "drupal/google_analytics": "8.2.*@dev",
+        "drupal/drupal8_zymphonies_theme": "8.1.*@dev"
     },
     "require-dev": {
         "behat/mink": "~1.6",

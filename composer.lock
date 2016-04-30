@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a295b0773a7be5c8710d0f5fa239e5e8",
-    "content-hash": "8343cdaab486f35951a6eeb8af2e629a",
+    "hash": "405d3ac8e7cce1f660a0e490bfd908ac",
+    "content-hash": "c4850e5504c68151532328660d326ee4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1147,6 +1147,37 @@
             "time": "2016-04-01 20:16:42"
         },
         {
+            "name": "drupal/drupal8_zymphonies_theme",
+            "version": "8.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/drupal8_zymphonies_theme.git",
+                "reference": "219534431f97d0f97d32d65a9e7d541ae409aecd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drupal8_zymphonies_theme-8.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Zymphonies Drupal 8 Responsive Theme. Developed & Designed by <a href=http://www.zymphonies.com>Zymphonies</a><br/>Contact us for Drupal Design & Development <a href=mailto:info@zymphonies.com>info@zymphonies.com</a>",
+            "homepage": "https://www.drupal.org/project/drupal8_zymphonies_theme",
+            "time": "2016-01-08 18:32:41"
+        },
+        {
             "name": "drupal/google_analytics",
             "version": "8.2.0",
             "source": {
@@ -1157,7 +1188,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.0.zip",
-                "reference": null,
+                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614",
                 "shasum": null
             },
             "require": {
@@ -1189,11 +1220,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "dev-8.x-1.x",
+            "version": "8.1.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
                 "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
+                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e",
+                "shasum": null
             },
             "require": {
                 "drupal/core": "8.*",
@@ -5903,6 +5940,7 @@
         "drupal/pathauto": 20,
         "drupal/redirect": 20,
         "drupal/google_analytics": 20,
+        "drupal/drupal8_zymphonies_theme": 20,
         "jcalderonzumba/gastonjs": 20
     },
     "prefer-stable": true,
