@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dbcd0ec800047b196f450b934774bc83",
-    "content-hash": "b9cb9a0e513146cc722dd376c60935dc",
+    "hash": "a295b0773a7be5c8710d0f5fa239e5e8",
+    "content-hash": "8343cdaab486f35951a6eeb8af2e629a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -808,6 +808,51 @@
             "time": "2016-04-13 15:46:44"
         },
         {
+            "name": "drupal/admin_toolbar",
+            "version": "8.1.14",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/admin_toolbar.git",
+                "reference": "bb7533adfce88bf783dcb23aea137ee9dbd80cdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.14.zip",
+                "reference": "bb7533adfce88bf783dcb23aea137ee9dbd80cdb",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/node": "8.*",
+                "drupal/toolbar": "8.*"
+            },
+            "replace": {
+                "drupal/admin_toolbar_tools": "self.version"
+            },
+            "suggest": {
+                "drupal/core": "Required by drupal/admin_toolbar_tools"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mohamed Anis Taktak",
+                    "homepage": "https://www.drupal.org/u/matio89"
+                }
+            ],
+            "description": "Admin Toolbar improve the default Drupal Toolbar,it lets the hover of sub menus.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "time": "2016-02-08 14:39:48"
+        },
+        {
             "name": "drupal/console",
             "version": "0.11.3",
             "source": {
@@ -1060,6 +1105,173 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2016-04-20 01:34:34"
+        },
+        {
+            "name": "drupal/ctools",
+            "version": "8.3.0-alpha25",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ctools",
+                "reference": "3c65d78a2ac14dbd0c54fea979a41ee9575aa188"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha25.zip",
+                "reference": "3c65d78a2ac14dbd0c54fea979a41ee9575aa188",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "replace": {
+                "drupal/ctools_block": "self.version",
+                "drupal/ctools_views": "self.version"
+            },
+            "suggest": {
+                "drupal/block": "Required by drupal/ctools_views",
+                "drupal/core": "Required by drupal/ctools_block, drupal/ctools_views",
+                "drupal/views": "Required by drupal/ctools_views"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-3.x": "8.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+            "homepage": "https://www.drupal.org/project/ctools",
+            "time": "2016-04-01 20:16:42"
+        },
+        {
+            "name": "drupal/google_analytics",
+            "version": "8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/google_analytics",
+                "reference": "99802b6a9f7711d30838acaa1af9ce2cf5b4d614"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-2.x": "8.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/u/hass"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/49388/committers"
+                }
+            ],
+            "description": "Allows your site to be tracked by Google Analytics by adding a Javascript tracking code to every page.",
+            "homepage": "https://www.drupal.org/project/google_analytics",
+            "time": "2016-04-23 19:09:32"
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pathauto",
+                "reference": "c4952e15e2906ff2040bc01f5e8f37d23950269e"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/ctools": "~8.3.0-alpha21",
+                "drupal/path": "8.*",
+                "drupal/token": "~8.1.0-alpha2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "homepage": "https://www.drupal.org/project/pathauto",
+            "time": "2016-04-18 18:44:27"
+        },
+        {
+            "name": "drupal/redirect",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/redirect",
+                "reference": "f74dca8c98cb0f4a79195721f010f70cfab88a29"
+            },
+            "require": {
+                "drupal/core": "8.*",
+                "drupal/link": "8.*",
+                "drupal/views": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "time": "2016-04-08 02:49:41"
+        },
+        {
+            "name": "drupal/token",
+            "version": "8.1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/token",
+                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-alpha2.zip",
+                "reference": "918d0d5e8e8ee7f446d3e068cb6aa2d7c61ee625",
+                "shasum": null
+            },
+            "require": {
+                "drupal/core": "8.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-8.x-1.x": "8.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "time": "2016-01-21 08:02:24"
         },
         {
             "name": "drush/drush",
@@ -5688,6 +5900,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/pathauto": 20,
+        "drupal/redirect": 20,
+        "drupal/google_analytics": 20,
         "jcalderonzumba/gastonjs": 20
     },
     "prefer-stable": true,
