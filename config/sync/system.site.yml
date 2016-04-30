@@ -1,0 +1,14 @@
+uuid: 189f7f5d-03b2-4e90-9c1b-1c4f59b0eb09
+name: 'DrupalCon New Orleans Advanced Site-building Session'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
